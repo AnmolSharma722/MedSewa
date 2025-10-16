@@ -49,7 +49,7 @@ const MyProfile = () => {
           ?
           <label htmlFor="image">
             <div className='inline-block relative cursor-pointer'>
-              <img className='w-36 rounded opacity-95' src={image ? URL.createObjectURL(image) : userData.image} alt="" />
+              <img className='w-36 rounded opacity-100' src={image ? URL.createObjectURL(image) : userData.image} alt="" />
               <img className='w-10 absolute bottom-12 right-12' src={image ? '' : assets.upload_icon} alt="" />
               <input onChange={(e) => setImage(e.target.files[0])} type="file" id='image' hidden />
             </div>
@@ -68,10 +68,10 @@ const MyProfile = () => {
         <p className='text-neutral-500 underline mt-3'>CONTACT INFORMATION</p>
         <div className='grid grid-cols-[1fr_3fr] gap-y-2.5 mt-3 text-neutral-700'>
           <p className='font-medium'>Email id: </p>
-          <p className='text-blue-500'>{userData.email}</p>
+          <p className='text-blue-500 border border-gray-400'>{userData.email}</p>
           <p className='font-medium'>Phone: </p>
           {
-            isEdit ? <input className='bg-gray-100 max-w-52' type="text" value={userData.phone} onChange={(e) => setUserData(prev => ({ ...prev, phone: e.target.value }))} /> : <p className='text-blue-400'>{userData.phone}</p>
+            isEdit ? <input className='bg-gray-100 max-w-52' type="text" value={userData.phone} onChange={(e) => setUserData(prev => ({ ...prev, phone: e.target.value }))} /> : <p className='text-blue-400 border border-gray-400'>{userData.phone}</p>
           }
 
           <p className='font-medium'>Address: </p>
@@ -83,7 +83,7 @@ const MyProfile = () => {
                 <input className='bg-gray-50' type="text" value={userData.address.line2} onChange={(e) => setUserData(prev => ({ ...prev, address: { ...prev.address, line2: e.target.value } }))} />
               </p>
               :
-              <p className='text-gray-500'>
+              <p className='text-gray-500 border border-gray-400'>
                 {userData.address.line1}
                 <br />
                 {userData.address.line2}
@@ -103,7 +103,7 @@ const MyProfile = () => {
                 <option value="Female">Female</option>
               </select>
               :
-              <p className='text-gray-400'>
+              <p className='text-gray-400 border border-gray-400'>
                 {userData.gender}
               </p>
           }
@@ -112,7 +112,7 @@ const MyProfile = () => {
             isEdit ?
               <input className='max-w-28 bg-gray-100' type="date" value={userData.dob} onChange={(e) => setUserData(prev => ({ ...prev, dob: e.target.value }))} />
               :
-              <p className='text-gray-400'>{userData.dob}</p>
+              <p className='text-gray-400 border border-gray-400'>{userData.dob}</p>
           }
         </div>
       </div>

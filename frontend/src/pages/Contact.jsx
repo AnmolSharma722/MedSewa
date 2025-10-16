@@ -9,13 +9,13 @@ const Contact = () => {
       </div>
 
       <div className='flex flex-col justify-center md:flex-row gap-10 mb-28 text-sm'>
-        <img className='w-full md:max-w-[360px]' src={assets.contact_image} alt="" />
+        <img className='w-full md:max-w-[360px]' src={assets.career} alt="" />
 
         <div className='flex flex-col gap-6 justify-center items-start '>
           <p className='font-semibold text-lg text-gray-600'>Our OFFICE</p>
           <p className='text-gray-500'>54709 Willms Church <br /> Suite 450 , Machyal , Himachal Pradesh</p>
           <p className='text-gray-500'>Tel: (415) 555-123345 <br /> Email: prescriptodoctors@gmail.com </p>
-          <p className='font-semibold text-lg text-gray-600'>Careers at PRESCRIPTO</p>
+          <p className='font-semibold text-lg text-gray-600'>Careers at MedSewa</p>
           <p className='text-gray-500'>Learn more about our teams and jobs openings.</p>
           <button className=' border border-black px-8 py-4 text-sm hover:bg-black hover:text-white transition-all duration-500'>
             Explore Jobs

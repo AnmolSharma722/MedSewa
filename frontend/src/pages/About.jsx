@@ -8,12 +8,12 @@ const About = () => {
         <p>ABOUT <span className='text-gray-700 font-medium'>US</span></p>
       </div>
       <div className='flex flex-col my-10 md:flex-row gap-12'>
-        <img className='w-full md:max-w-[360px]' src={assets.about_image} alt="" />
+        <img className='w-full md:max-w-[360px]' src={assets.ductors} alt="" />
         <div className='flex flex-col justify-center gap-6 md:w-2/4 text-sm text-gray-600'>
-          <p>Welcome to PRESCRIPTO , your trusted partner is managing you heealthcare needs convieniently and efficiently </p>
+          <p>Welcome to <b>MEDSEWA</b>  , your trusted partner is managing you heealthcare needs convieniently and efficiently </p>
           <p>Prescripto is commited to excellence in the healthcare technology</p>
           <b className='text-gray-800'>Our Vision</b>
-          <p>Our vision is to create a seamkess healthcare experience for the every user. we aim to bridge the gap between the patients and the healthcare providers.</p>
+          <p>Our vision Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi tenetur rem sint minus, officiis ab, nihil ipsam molestias dolore quos quibusdam officia, nulla animi! Voluptates laborum repellat beatae deleniti expedita. is to create a seamkess healthcare experience for the every user. we aim to bridge the gap between the patients and the healthcare providers.</p>
         </div>
       </div>
 
@@ -21,7 +21,7 @@ const About = () => {
         <p>WHY <span className='text-gray-700 font-semibold'>CHOOSE US</span></p>
       </div>
 
-      <div className='flex flex-col md:flex-row mb-20'>
+      <div className='grid grid-flow-row md:flex-row mb-20'>
 
         <div className='border px-10 md:px-16 py-8 sm:py16 flex flex-col gap-5 text-[15px] hover:bg-primary hover:text-white transition-all duration-300 cursor-pointer text-gray-600'>
           <b>EFFICIENCY</b>

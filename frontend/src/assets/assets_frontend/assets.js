@@ -36,10 +36,15 @@ import General_physician from './General_physician.svg'
 import Gynecologist from './Gynecologist.svg'
 import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
-
+import duc from './duc.png'
+import ductors from './ductors.png'
+import career from './career.png'
 
 export const assets = {
+    career,
+    ductors,
     appointment_img,
+    duc,
     header_img,
     group_profiles,
     logo,
