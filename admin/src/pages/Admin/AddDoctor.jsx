@@ -84,9 +84,9 @@ const AddDoctor = () => {
       <p className='mb-3 text-lg font-medium'>Add Doctor</p>
 
       <div className='bg-white px-8 py-8 border rounded w-full max-w-4xl max-h-[80vh] overflow-y-scroll'>
-        <div className='flex items-center gap-4 mb-8  text-gray-500 '>
+        <div className='flex flex-col items-center gap-4 mb-8  text-gray-500 '>
           <label htmlFor="doc-img">
-            <img className='w-16 bg-gray-100 rounded-full cursor-pointer' src={form.docImg ? URL.createObjectURL(form.docImg) : assets.upload_area} alt="" />
+            <img className='w-16 bg-gray-100  cursor-pointer' src={form.docImg ? URL.createObjectURL(form.docImg) : assets.upload_area} alt="" />
           </label>
 
           <input onChange={handleChange} name='docImg' type="file" id='doc-img' hidden />
@@ -99,22 +99,22 @@ const AddDoctor = () => {
 
             <div className='flex-1 flex flex-col gap-1'>
               <p>Doctor name</p>
-              <input onChange={handleChange} name='name' value={form.name} className='border rounded px-3 py-2' type="text" placeholder='Name' required />
+              <input onChange={handleChange} name='name' value={form.name} className='border rounded-full px-3 py-2' type="text" placeholder='Name' required />
             </div>
 
             <div className='flex-1 flex flex-col gap-1'>
               <p>Doctor Email</p>
-              <input onChange={handleChange} name='email' value={form.email} className='border rounded px-3 py-2' type="email" placeholder='Email' required />
+              <input onChange={handleChange} name='email' value={form.email} className='border rounded-full px-3 py-2' type="email" placeholder='Email' required />
             </div>
 
             <div className='flex-1 flex flex-col gap-1'>
               <p>Doctor Password</p>
-              <input onChange={handleChange} name='password' value={form.password} className='border rounded px-3 py-2' type="password" placeholder='Password' required />
+              <input onChange={handleChange} name='password' value={form.password} className='border rounded-full px-3 py-2' type="password" placeholder='Password' required />
             </div>
 
             <div className='flex-1 flex flex-col gap-1'>
               <p>Experience</p>
-              <select onChange={handleChange} name='experience' value={form.experience} className='border rounded px-3 py-2' >
+              <select onChange={handleChange} name='experience' value={form.experience} className='border rounded-full px-3 py-2' >
                 <option value="1 Year">1 Year</option>
                 <option value="2 Year">2 Year</option>
                 <option value="3 Year">3 Year</option>
@@ -130,7 +130,7 @@ const AddDoctor = () => {
 
             <div className='flex-1 flex flex-col gap-1'>
               <p>Fees</p>
-              <input onChange={handleChange} name='fees' value={form.fees} className='border rounded px-3 py-2' type="number" placeholder='fees' required />
+              <input onChange={handleChange} name='fees' value={form.fees} className='border rounded-full px-3 py-2' type="number" placeholder='fees' required />
             </div>
 
           </div>
@@ -138,7 +138,7 @@ const AddDoctor = () => {
           <div className='w-full lg:flex-1 flex flex-col gap-4'>
             <div className='flex-1 flex flex-col gap-1'>
               <p>Speciality</p>
-              <select onChange={handleChange} name='speciality' value={form.speciality} className='border rounded px-3 py-2' id="">
+              <select onChange={handleChange} name='speciality' value={form.speciality} className='border rounded-full px-3 py-2' id="">
                 <option value="General physician">General physician</option>
                 <option value="Gynecoligist">Gynecoligist</option>
                 <option value="Dermatologist">Dermatologist</option>
@@ -150,13 +150,13 @@ const AddDoctor = () => {
 
             <div className='flex-1 flex flex-col gap-1'>
               <p>Education</p>
-              <input onChange={handleChange} name='degree' value={form.degree} className='border rounded px-3 py-2' type="text" placeholder='education' required />
+              <input onChange={handleChange} name='degree' value={form.degree} className='border rounded-full px-3 py-2' type="text" placeholder='education' required />
             </div>
 
             <div className='flex-1 flex flex-col gap-1'>
               <p>Address</p>
-              <input onChange={handleChange} name='address1' value={form.address1} className='border rounded px-3 py-2' type="text" placeholder='address 1' required />
-              <input onChange={handleChange} name='address2' value={form.address2} className='border rounded px-3 py-2' type="text" placeholder='address 2' required />
+              <input onChange={handleChange} name='address1' value={form.address1} className='border rounded-full px-3 py-2' type="text" placeholder='address 1' required />
+              <input onChange={handleChange} name='address2' value={form.address2} className='border rounded-full px-3 py-2' type="text" placeholder='address 2' required />
             </div>
           </div>
         </div>

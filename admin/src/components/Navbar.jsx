@@ -27,8 +27,8 @@ const Navbar = () => {
           <img onClick={() => navigate("/")} className='w-36 cursor-pointer h-28' src={assets.duc} alt="" />
           <p className='font-bold pl-8'>MedSewa</p>
         </div>
-        <p className='border px-2.5 py-0.5 rounded-full border-gray-500 text-gray-600'>{aToken ? "Admin" : "Doctor"}</p>
       </div>
+      <p className='border px-2.5 py-0.5  border-gray-500 text-gray-600 hover:text-white hover:bg-black hover:transition-all hover:duration-75'>{aToken ? "Admin" : "Doctor"}</p>
       <button onClick={logout} className='bg-primary text-white text-sm px-10 py-2 rounded-full'>Logout</button>
     </div>
   )
